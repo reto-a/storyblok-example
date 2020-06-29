@@ -1,0 +1,39 @@
+<div [appStoryblok]="_editable" class="section" id="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 d-none d-md-inline-block">
+                        <div id="maintxt" class="dinero">
+                            <h5>{{ titulo_1 }}</h5>
+                            <h2 id="tudinero">{{ titulo_2 }}</h2>
+                            <p>{{ titulo_3 }}</p>
+                            <a href="#beneficios">
+                                <button type="button" class="btn btn-dark">{{ texto_boton }}</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 d-md-none">
+                        <div id="maintxt" class="dinero" style="padding: 10px; text-align: center !important;">
+                            <h5>{{ titulo_1 }}</h5>
+                            <h1 id="tudinero">{{ titulo_2 }}</h1>
+                            <p>{{ titulo_3 }}</p>
+                            <a href="#beneficios">
+                                <button type="button" class="btn btn-dark">{{ texto_boton }}</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 text-center d-none d-md-inline-block"
+                        style="padding-top: 80px;">
+                        <img class="img-fluid mano" [src]="imagenSrc" />
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center d-sm-inline-block d-md-none">
+                        <img class="img-fluid mano" [src]="imagenSrc" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pleca-verde"></div>
