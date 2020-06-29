@@ -19,13 +19,10 @@ export class BBContenedorComponent implements OnInit {
     constructor() {
         import('src/app/components/components').then(cp => {
             this.components = cp.components;
-            // console.log(cp.components);
-            
         });
     }
 
     ngOnInit() {
         console.log('img: ', this.tarjetas);
     }
-
 }

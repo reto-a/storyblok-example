@@ -1,9 +1,6 @@
-<!-- <div class="root"> -->
-    <div [appStoryblok]="_editable">
-        <div *ngFor="let blok of body">
-            <ndc-dynamic *ngIf="components" [ndcDynamicComponent]="components[blok.component]"
-                [ndcDynamicInputs]="blok">
-            </ndc-dynamic>
-        </div>
+<div [appStoryblok]="_editable">
+    <div *ngFor="let blok of body">
+        <ndc-dynamic *ngIf="components" [ndcDynamicComponent]="components[blok.component]" [ndcDynamicInputs]="blok">
+        </ndc-dynamic>
     </div>
-<!-- </div> -->
+</div>

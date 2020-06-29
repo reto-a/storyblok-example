@@ -9,13 +9,11 @@
         </div>
 
 
-        <!-- <div class="container-fluid"> -->
         <ng-container *ngFor="let tarjeta of tarjetas">
             <ndc-dynamic *ngIf="components" [ndcDynamicComponent]="components[tarjeta.component]"
                 [ndcDynamicInputs]="tarjeta">
             </ndc-dynamic>
         </ng-container>
-        <!-- </div> -->
 
 
 

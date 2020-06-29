@@ -11,17 +11,13 @@ export class SCuentaComponent implements OnInit {
 
     body: any;
     _editable: any;
-    // components = components;
     components: any;
 
     constructor(private storyblokService: StoryblokService) {
         import('src/app/components/components').then(cp => {
             this.components = cp.components;
-            // console.log(cp);
-            
         });
-        // console.log(this.components);
-        
+
         window.storyblok.init();
         window.storyblok.on(['change', 'published'], () => {
             location.reload();
@@ -31,10 +27,8 @@ export class SCuentaComponent implements OnInit {
     ngOnInit() {
         this.storyblokService.getStory('cuenta', { version: 'published' })
             .then(data => {
-                // console.log('DATA: ', data);
                 this._editable = data._editable;
                 this.body = data.body;
             });
     }
-
 }

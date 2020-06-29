@@ -13,8 +13,8 @@ export class StoryblokService {
 
     /**
      * Método par obtener una story especifica.
-     * @param  {string} slug Ruta para identificar la story.
-     * @param  {object} params?
+     * @param slug Ruta para identificar la story.
+     * @param params?
      * @returns Promise
      */
     async getStory(slug: string, params?: object): Promise<any> {
@@ -24,7 +24,7 @@ export class StoryblokService {
 
     /**
      * Método para obtener todas las storys.
-     * @param  {object} params?
+     * @param params?
      * @returns Promise
      */
     async getStories(params?: object): Promise<any> {
