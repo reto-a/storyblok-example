@@ -25,7 +25,7 @@ export class SCuentaComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.storyblokService.getStory('cuenta', { version: 'published' })
+        this.storyblokService.getStory('cuenta', { version: 'draft' })
             .then(data => {
                 this._editable = data._editable;
                 this.body = data.body;
